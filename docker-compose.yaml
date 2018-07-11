@@ -1,0 +1,10 @@
+version: '3.6'
+services:
+  ffjson:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    env_file: .env
+    volumes:
+      - ${PWD}/${FOLDER_PATH}:/go/src/${FOLDER_PATH}
+    working_dir: /go/src
