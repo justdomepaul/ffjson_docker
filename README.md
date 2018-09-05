@@ -4,5 +4,6 @@
 2. ffjson your go file 
 
 ```bash
-$ docker-compose run --rm ffjson ./{your FOLDER_PATH}/example.go
+$ docker-compose run --rm ffjson env GO111MODULE=on go mod vendor
+$ docker-compose run --rm ffjson ffjson ./example.go
 ```
