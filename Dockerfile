@@ -1,4 +1,4 @@
-FROM golang:1.9.7-alpine3.7
+FROM golang:1.11-alpine3.8
 RUN apk add --no-cache curl bash git gcc libc-dev build-base
 
 MAINTAINER Max Focker <max.focker.shih@gmail.com>
